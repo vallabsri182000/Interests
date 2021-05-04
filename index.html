@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Interests</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h1 class="logo">Movie Suggestion</h1>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="Marvel.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text" style="opacity: 0.8;">
+            <h2>Your Interests matters us</h2>
+            <h3>Explore Movies of your Interests</h3>
+            <p>Movies that you have never watched or to rewatch. 
+                We will Provide you a wide lists of movies of your interests.
+                Choose your interests.
+            </p>
+            <a href="#">Let's Start</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+        </ul>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="JoinUs.html">Join Us</a></li>
+        </ul>        
+    </div>
+
+    <script>
+         const menuToggle = document.querySelector('.toggle');
+         const showcase = document.querySelector('.showcase');
+         
+         menuToggle.addEventListener('click', () => { 
+             menuToggle.classList.toggle('active');
+             showcase.classList.toggle('active');
+             })
+    </script>
+</body>
+</html>

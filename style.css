@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root {
+    --overlay-color: #03a9f4
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Itim', sans-serif;
+}
+
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+
+.showcase header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.toggle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 100px;
+    background: url(menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+.toggle.active {
+    background: url(close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  mix-blend-mode: overlay;
+}
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 2em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3 {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #fff;
+  margin: 20px 0;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p {
+  font-size: 1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 600px;
+}
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover {
+  letter-spacing: 6px;
+}
+
+
+.social {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li {
+  list-style: none;
+}
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+.menu ul li a:hover {
+  color: #03a9f4; 
+}
+
+@media (max-width: 991px)
+{
+  .showcase, .showcase header {
+    padding: 40px;
+    }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
+}
+
+/* Join Us css code*/
+.toggle1{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 100px;
+  background: url(menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+
+.toggle1.active {
+  background: url(close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
+
+.showc{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.showc.active {
+  right: 300px;
+}
+
+
+.showc header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.hero {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(movieCollage.jpg);
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.form-box {
+  height: 480px;
+  width: 380px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.socialicons {
+  position: absolute;
+  z-index: 10;
+  bottom: 100px;
+  left: 120px;
+  top: -120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialicons li {
+  list-style: none;
+}
+.socialicons li a {
+  display: inline-block;
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.socialicons li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.input-group {
+  top: 180px;
+  left: 50px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.check-box {
+  margin: 30px 10px 30px 0;
+}
+
+.span {
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+
+#LogIn {
+ left: 50px;
+}
+#Register {
+  left: 450px;
+}
+
+
+/* Contact Us css code*/
+
+.text h4 {
+  font-size: 2em;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h5 {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  line-height: 1em;
+}
+
+.heroc {
+  height: 100%;
+  width: 90%;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(mvd.jpg);
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.socialicon {
+  position: absolute;
+  z-index: 10;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialicon li {
+  list-style: none;
+}
+.socialicon li a {
+  display: inline-block;
+  margin-right: 20px;
+  transform: scale(0.5);
+  filter: invert(1);
+  transition: 0.5s;
+}
+.socialicon li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}

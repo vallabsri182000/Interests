@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact us</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h1>Contact us</h1>
+            <div class="toggle"></div>
+        </header>
+
+        <div class="text" style="opacity: 0.8;">
+            <h4>We Are Always Here...</h4>
+            <hr>
+            <h5>Mail us at: vallabsri182000@gmail.com
+                <br>
+                Call: 6301665313</h5>
+        </div>
+        <div class="heroc">
+            <div>
+                <ul class="socialicon">
+                    <li><a href="https://www.facebook.com/vallab.sri/" alt=""><img src="facebook.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/sreevallab/" alt=""><img src="instagram.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/sreevallabNSV/" alt=""><img src="twitter.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="JoinUs.html">Join Us</a></li>
+        </ul>        
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+        
+        menuToggle.addEventListener('click', () => { 
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+            })
+   </script>
+</body>
+</html>

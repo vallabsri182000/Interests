@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Join Us</title>
+</head>
+<body>
+    <section class="showc">
+        <header>
+            <div class="toggle1"></div>
+        </header>
+        <div class="overlay"></div>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"> </div>
+                    <button type="button" class="toggle-btn" onclick="login()">
+                        Log In
+                    </button>
+                    <button type="button" class="toggle-btn" onclick="register()">
+                        Register
+                    </button>
+                </div>
+                <div>
+                    <ul class="socialicons">
+                        <li><a href="#" alt=""><img src="facebook.png" alt=""></a></li>
+                        <li><a href="#" alt=""><img src="instagram.png" alt=""></a></li>
+                        <li><a href="#" alt=""><img src="twitter.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <form id="LogIn" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Me</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <form id="Register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="GMail Id" required>
+                    <input type="text" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="JoinUs.html">Join Us</a></li>
+        </ul>        
+    </div>
+    
+    <script>
+        var x = document.getElementById("LogIn");
+        var y = document.getElementById("Register");
+        var z = document.getElementById("btn"); 
+        
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+
+        const menuToggle1 = document.querySelector('.toggle1');
+        const showc = document.querySelector('.showc');
+         
+         menuToggle1.addEventListener('click', () => { 
+             menuToggle1.classList.toggle('active');
+             showc.classList.toggle('active');
+            })
+    </script>
+</body>
+</html>
